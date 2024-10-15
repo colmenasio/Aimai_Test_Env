@@ -31,6 +31,7 @@ private:
     data_frame<T>* shm_data;
 
 public:
+    shmem_channel();
     shmem_channel(int channel, SHMEM_RIGHTS mode);
     ~shmem_channel();
     T* get_shmem_data_accesor();
