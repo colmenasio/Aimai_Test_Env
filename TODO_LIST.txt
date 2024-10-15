@@ -1,0 +1,5 @@
+Add features to avoid channel colision in 'common/shmem_channel/."
+
+Automate the adding of source files to the executable in 'gdextension/SConstruct' with a recursive file search
+
+Add propper error handling to 'common/shmem_channel/.'
