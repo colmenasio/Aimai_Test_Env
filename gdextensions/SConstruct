@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+import os
+import sys
+
+print("BUILDING FROM SCONS")
+env = SConscript("godot-cpp/SConstruct")
+
+# For reference:
+# - CCFLAGS are compilation flags shared between C and C++
+# - CFLAGS are for C-specific compilation flags
+# - CXXFLAGS are for C++-specific compilation flags
+# - CPPFLAGS are for pre-processor flags
+# - CPPDEFINES are for pre-processor defines
+# - LINKFLAGS are for linking flags
+
+# tweak this if you want to use different folders, or more folders, to store your source code in.
+env.Append(CPPPATH=["src/"])
+env.Append(CPPPATH=["../common/shmem_channel"])
+gdextension_sources= Glob("src/*.cpp")
+common_lib_sources = Glob("../common/shmem_channel/*.cpp")
+
+sources = gdextension_sources + common_lib_sources
+
+if env["platform"] == "macos":
+    library = env.SharedLibrary(
+        "build/remote_racecar.{}.{}.framework/.{}.{}".format(
+            env["platform"], env["target"], env["platform"], env["target"]
+        ),
+        source=sources,
+    )
+elif env["platform"] == "ios":
+    if env["ios_simulator"]:
+        library = env.StaticLibrary(
+            "build/remote_racecar.{}.{}.simulator.a".format(env["platform"], env["target"]),
+            source=sources,
+        )
+    else:
+        library = env.StaticLibrary(
+            "build/remote_racecar.{}.{}.a".format(env["platform"], env["target"]),
+            source=sources,
+        )
+else:
+    library = env.SharedLibrary(
+        "build/remote_racecar{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        source=sources,
+    )
+
+Default(library)
