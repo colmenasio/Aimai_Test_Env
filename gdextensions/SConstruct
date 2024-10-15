@@ -13,9 +13,13 @@ env = SConscript("godot-cpp/SConstruct")
 # - CPPDEFINES are for pre-processor defines
 # - LINKFLAGS are for linking flags
 
-# tweak this if you want to use different folders, or more folders, to store your source code in.
+# ------------------- IMPORTANT -------------------------
+# At the moment, this Sconstruct does not automatically scan the "common" directory because im too lazy to implement it.
+
 env.Append(CPPPATH=["src/"])
 env.Append(CPPPATH=["../common/shmem_channel"])
+
+
 gdextension_sources= Glob("src/*.cpp")
 common_lib_sources = Glob("../common/shmem_channel/*.cpp")
 
