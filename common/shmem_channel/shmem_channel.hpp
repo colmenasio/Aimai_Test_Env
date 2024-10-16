@@ -12,8 +12,9 @@
 
 enum SHMEM_RIGHTS
 {
-    READ = 0,
-    WRITE = 1,
+    NONE = 0,
+    READ = 1,
+    WRITE = 2,
 };
 
 template <typename T>
@@ -25,7 +26,7 @@ struct data_frame
 };
 
 template <typename T>
-class shmem_channel
+class ShmemChannel
 {
 private:
     SHMEM_RIGHTS mode;
@@ -34,21 +35,21 @@ private:
     data_frame<T> *shm_data;
 
 public:
-    shmem_channel();
-    shmem_channel(int channel_identifier, SHMEM_RIGHTS mode);
-    shmem_channel(shmem_channel &&other) noexcept;               // Got i hate move constructors
-    shmem_channel<T> &operator=(shmem_channel &&other) noexcept; // God i hate move semantics
-    ~shmem_channel();
+    ShmemChannel();
+    ShmemChannel(int channel_identifier, SHMEM_RIGHTS mode);
+    ShmemChannel(ShmemChannel &&other) noexcept;               // Got i hate move constructors
+    ShmemChannel<T> &operator=(ShmemChannel &&other) noexcept; // God i hate move semantics
+    ~ShmemChannel();
     T *get_shmem_data_accesor();
 };
 
 template <typename T>
-shmem_channel<T>::shmem_channel() : shm_id(-1), shm_data(nullptr)
+ShmemChannel<T>::ShmemChannel() : mode(NONE), shm_key(-1), shm_id(-1), shm_data(nullptr)
 {
 }
 
 template <typename T>
-shmem_channel<T>::shmem_channel(int channel_identifier, SHMEM_RIGHTS mode) : mode(mode)
+ShmemChannel<T>::ShmemChannel(int channel_identifier, SHMEM_RIGHTS mode) : mode(mode)
 {
     // Generate a key
     this->shm_key = ftok(SHMEM_LOCATION, channel_identifier);
@@ -63,6 +64,8 @@ shmem_channel<T>::shmem_channel(int channel_identifier, SHMEM_RIGHTS mode) : mod
             if (sys_result == 0)
             {
                 this->shm_key = ftok(SHMEM_LOCATION, channel_identifier);
+            } else {
+                std::cout << "[SHMEM] Could not find or create " SHMEM_LOCATION << std::endl;
             }
             break;
 
@@ -78,16 +81,14 @@ shmem_channel<T>::shmem_channel(int channel_identifier, SHMEM_RIGHTS mode) : mod
     {
         // Everything worked and we have a valid id
         this->shm_id = shmem_returned_id; /* The creation succeded so we can get the id */
-        std::cout << std::endl
-                  << "[SHMEM] Attached to channel with key: " << this->shm_key << " and id: " << this->shm_id << std::endl;
+        std::cout << "[SHMEM] Attached to channel with key: " << this->shm_key << " and id: " << this->shm_id << std::endl;
     }
     else if (shmem_returned_id == -1)
     {
         switch (errno)
         {
         default:
-            std::cout << std::endl
-                      << "[SHMEM] Unknonw error when creating shared mem. Key: " << this->shm_key << " Error ID: " << errno << std::endl;
+            std::cout << "[SHMEM] Unknonw error when creating shared mem. Key: " << this->shm_key << " Error ID: " << errno << std::endl;
             break;
         }
     }
@@ -108,22 +109,21 @@ shmem_channel<T>::shmem_channel(int channel_identifier, SHMEM_RIGHTS mode) : mod
         this->shm_data->flags |= 0x0001; // Set initialized flag
         this->shm_data->ref_count = 0;   // Initialize ref counter
 
-        std::cout << std::endl
-                  << "[SHMEM] Initialized channel with id: " << this->shm_id << std::endl;
+        std::cout << "[SHMEM] Initialized channel with id: " << this->shm_id << std::endl;
     };
     // Update the reference count
-    std::cout << "REF COUNT: " << (int)__sync_add_and_fetch(&(this->shm_data->ref_count), 1) << std::endl;
+    __sync_add_and_fetch(&(this->shm_data->ref_count), 1);
 }
 
 template <typename T>
-shmem_channel<T>::shmem_channel(shmem_channel &&other) noexcept: shm_key(other.shm_key), shm_id(other.shm_id), shm_data(other.shm_data), mode(other.mode)
+ShmemChannel<T>::ShmemChannel(ShmemChannel &&other) noexcept: shm_key(other.shm_key), shm_id(other.shm_id), shm_data(other.shm_data), mode(other.mode)
 {
     other.shm_data = nullptr; // Ensure the moved-from object doesn't destruct shared memory
     other.shm_id = -1;
 }
 
 template <typename T>
-shmem_channel<T> &shmem_channel<T>::operator=(shmem_channel &&other) noexcept
+ShmemChannel<T> &ShmemChannel<T>::operator=(ShmemChannel &&other) noexcept
 {
     if (this != &other)
     {
@@ -149,18 +149,23 @@ shmem_channel<T> &shmem_channel<T>::operator=(shmem_channel &&other) noexcept
 }
 
 template <typename T>
-shmem_channel<T>::~shmem_channel()
+ShmemChannel<T>::~ShmemChannel()
 {
-    std::cout << "[SHMEM] Trying to destroy id " << this->shm_id << " with rc of: " << (int)this->shm_data->ref_count << std::endl;
-    if (this->shm_data && __sync_sub_and_fetch(&(this->shm_data->ref_count), 1) == 0)
+    std::cout << "[SHMEM] Detaching from channel with id " << this->shm_id << " with ref_counter of: " << (int)this->shm_data->ref_count << std::endl;
+    if (!this->shm_data){
+        return;
+    }
+    if (__sync_sub_and_fetch(&(this->shm_data->ref_count), 1) == 0) // No references left, destry the shared memory segment
     {
         std::cout << "[SHMEM] Closing channel" << std::endl;
         shmctl(this->shm_id, IPC_RMID, nullptr);
+    } else { //References left, just detatch
+        shmdt(this->shm_data);
     }
 }
 
 template <typename T>
-T *shmem_channel<T>::get_shmem_data_accesor()
+T *ShmemChannel<T>::get_shmem_data_accesor()
 {
     return &(this->shm_data->data);
 }
