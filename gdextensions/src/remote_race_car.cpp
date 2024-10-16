@@ -1,5 +1,4 @@
 #include "remote_race_car.hpp"
-#include <iostream>
 
 using namespace godot;
 
@@ -23,9 +22,9 @@ void RemoteRaceCar::read_commands(){
 
 void RemoteRaceCar::write_position(){
     auto position_accessor = this->position_channel.get_shmem_data_accesor();
-    position_accessor->xpos = this->get_position().AXIS_X;
-    position_accessor->zpos = this->get_position().AXIS_Z;
-    position_accessor->angle = this->get_rotation().AXIS_Y;
+    position_accessor->xpos = this->get_position().x;
+    position_accessor->zpos = this->get_position().z;
+    position_accessor->angle = this->get_rotation().y;
 }
 
 // Explicitly instantiate the template for RRCAR_POSITION
