@@ -1,0 +1,16 @@
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/lib/cpp_example_nodes/waveDriver
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/ament_index/resource_index/package_run_dependencies/cpp_example_nodes
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/ament_index/resource_index/parent_prefix_path/cpp_example_nodes
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/ament_prefix_path.sh
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/ament_prefix_path.dsv
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/path.sh
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/path.dsv
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.bash
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.sh
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.zsh
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.dsv
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/package.dsv
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/ament_index/resource_index/packages/cpp_example_nodes
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/cmake/cpp_example_nodesConfig.cmake
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/cmake/cpp_example_nodesConfig-version.cmake
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/package.xml

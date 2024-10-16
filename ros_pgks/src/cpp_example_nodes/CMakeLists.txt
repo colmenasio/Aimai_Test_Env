@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(example_nodes)
+project(cpp_example_nodes)
 
 set(CURR_WD /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/)
 

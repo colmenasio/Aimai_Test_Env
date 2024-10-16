@@ -9,7 +9,7 @@
 
 using namespace std::chrono_literals;
 
-class WaveDriver : public rclcpp::Node
+class PositionAnnouncer: public rclcpp::Node
 {
 
 private:
@@ -41,8 +41,8 @@ public:
         // Half decent sine wave i guess
         this->counter++;
         double gas_val, steer_val, brake_val;
-        gas_val = 1200l;
-        steer_val = MAX_STEER * 1/8 * sin(2 * 3.1415 * (double)this->counter/120);
+        gas_val = 800l;
+        steer_val = MAX_STEER * 1/32 * sin(2 * 3.1415 * (double)this->counter/32);
         brake_val = 0l;
         auto command_accessor = this->command_channel.get_shmem_data_accesor();
         command_accessor->gas = gas_val;
