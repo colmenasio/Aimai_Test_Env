@@ -6,7 +6,7 @@
 #include <cerrno>
 #include <cstring>
 #include <iostream>
-// #include <mutex>
+#include <mutex>
 
 #define SHMEM_LOCATION "/tmp/shmem_channels"
 
@@ -20,8 +20,7 @@ template <typename T>
 struct data_frame
 {
     __uint8_t flags;     // Atm only the bit in position 0x0001 is used. (To indicate wether the channel was initialized)
-    __uint8_t ref_count; // Ref counter to know when to free the shared memory
-    // pthread_mutex_t mutex; // To avoid race conditions
+    __uint8_t ref_count; // Ref counter to know when to free the shared memory 
     T data; // Actual data in the frame
 };
 
@@ -105,13 +104,9 @@ shmem_channel<T>::shmem_channel(int channel_identifier, SHMEM_RIGHTS mode) : mod
     if (!(this->shm_data->flags & 0x0001))
     {
         // Inicializaciones de flags y tal i guess
-        // pthread_mutex_init(&(this->shm_data->mutex), nullptr); // Initialize the mutex
-        // pthread_mutex_lock(&(this->shm_data->mutex));          // Lock it to initialize shared memory safely
 
         this->shm_data->flags |= 0x0001; // Set initialized flag
         this->shm_data->ref_count = 0;   // Initialize ref counter
-
-        // pthread_mutex_unlock(&(this->shm_data->mutex));
 
         std::cout << std::endl
                   << "[SHMEM] Initialized channel with id: " << this->shm_id << std::endl;
