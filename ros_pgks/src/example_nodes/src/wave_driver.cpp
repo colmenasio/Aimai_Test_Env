@@ -42,7 +42,7 @@ public:
         this->counter++;
         double gas_val, steer_val, brake_val;
         gas_val = 1200l;
-        steer_val = 3.2 * sin(2 * 3.1415 * (double)this->counter/120);
+        steer_val = MAX_STEER * 1/8 * sin(2 * 3.1415 * (double)this->counter/120);
         brake_val = 0l;
         auto command_accessor = this->command_channel.get_shmem_data_accesor();
         command_accessor->gas = gas_val;
