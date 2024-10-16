@@ -1,0 +1,18 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o[0m
+In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:5[m[K:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:[m[K In constructor ‘[01m[Kshmem_channel<T>::[01;32m[Kshmem_channel[m[K(int, SHMEM_RIGHTS)[m[K’:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:56:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kthis[m[K’
+   56 |         std::cout << "Created Channel"
+      |                                       [01;31m[K^[m[K
+      |                                       [32m[K;[m[K
+   57 |         [32m[Kthis[m[K->shm_id = shmget(this->shm_key, sizeof(data_frame<T>), 0666); /* The creation succeded so we can get the id */
+      |         [32m[K~~~~[m[K                           
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:61:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kthis[m[K’
+   61 |         std::cout << "Attached to existing Channel"
+      |                                                    [01;31m[K^[m[K
+      |                                                    [32m[K;[m[K
+   62 |         [32m[Kthis[m[K->shm_id = shmget(this->shm_key, sizeof(data_frame<T>), 0666); /* The creation failed cause the shm segment already exists */
+      |         [32m[K~~~~[m[K                                        
+gmake[2]: *** [CMakeFiles/waveDriver.dir/build.make:76: CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/waveDriver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,45 @@
+[0.009s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[0.031s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.200s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.222s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.229s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.249s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.299s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.300s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.353s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.407s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.478s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.479s] -- Configured cppcheck include dirs: 
+[0.479s] -- Configured cppcheck exclude dirs and/or files: 
+[0.479s] -- Added test 'lint_cmake' to check CMake code style
+[0.480s] -- Added test 'uncrustify' to check C / C++ code style
+[0.480s] -- Configured uncrustify additional arguments: 
+[0.481s] -- Added test 'xmllint' to check XML markup files
+[0.482s] -- Configuring done (0.5s)
+[0.492s] -- Generating done (0.0s)
+[0.494s] -- Build files have been written to: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes
+[0.526s] [ 50%] [32mBuilding CXX object CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o[0m
+[3.235s] [100%] [32m[1mLinking CXX executable waveDriver[0m
+[3.344s] [100%] Built target waveDriver
+[3.354s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[3.384s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes
+[3.391s] -- Install configuration: ""
+[3.391s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/lib/example_nodes/waveDriver
+[3.391s] -- Set non-toolchain portion of runtime path of "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/lib/example_nodes/waveDriver" to ""
+[3.391s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/package_run_dependencies/example_nodes
+[3.392s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/parent_prefix_path/example_nodes
+[3.392s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/ament_prefix_path.sh
+[3.392s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/ament_prefix_path.dsv
+[3.392s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/path.sh
+[3.392s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/path.dsv
+[3.392s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.bash
+[3.392s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.sh
+[3.393s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.zsh
+[3.393s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.dsv
+[3.393s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/package.dsv
+[3.393s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/packages/example_nodes
+[3.393s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/cmake/example_nodesConfig.cmake
+[3.393s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/cmake/example_nodesConfig-version.cmake
+[3.394s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/package.xml
+[3.395s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes

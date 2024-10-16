@@ -1,0 +1,18 @@
+In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:6[m[K:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:123:1:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kshmem_channel<T>::shmem_channel(shmem_channel<T>&&) noexcept[m[K’ has a different exception specifier
+  123 | [01;31m[Kshmem_channel<T>[m[K::shmem_channel(shmem_channel &&other) noexcept
+      | [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:40:5:[m[K [01;36m[Knote: [m[Kfrom previous declaration ‘[01m[Kshmem_channel<T>::shmem_channel(shmem_channel<T>&&)[m[K’
+   40 |     [01;36m[Kshmem_channel[m[K(shmem_channel &&other); // Got i hate move semantcis
+      |     [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:[m[K In constructor ‘[01m[KWaveDriver::[01;32m[KWaveDriver[m[K()[m[K’:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:29:123:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kconstexpr shmem_channel<common_structs::RRCAR_COMMAND>& shmem_channel<common_structs::RRCAR_COMMAND>::[01;32m[Koperator=[m[K(const shmem_channel<common_structs::RRCAR_COMMAND>&)[m[K’
+   29 | nel<common_structs::RRCAR_COMMAND>(RRC_COMMAND_SHMEM_CHANNEL, SHMEM_RIGHTS::READ[01;31m[K)[m[K;
+      |                                                                                 [01;31m[K^[m[K
+
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:29:7:[m[K [01;36m[Knote: [m[K‘[01m[Kconstexpr shmem_channel<common_structs::RRCAR_COMMAND>& shmem_channel<common_structs::RRCAR_COMMAND>::[01;32m[Koperator=[m[K(const shmem_channel<common_structs::RRCAR_COMMAND>&)[m[K’ is implicitly declared as deleted because ‘[01m[Kshmem_channel<common_structs::RRCAR_COMMAND>[m[K’ declares a move constructor or move assignment operator
+   29 | class [01;36m[Kshmem_channel[m[K
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/waveDriver.dir/build.make:76: CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/waveDriver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,11 @@
+[0.009s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o[0m
+[0.494s] In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:6[m[K:
+[0.494s] [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:[m[K In constructor ‘[01m[Kshmem_channel<T>::[01;32m[Kshmem_channel[m[K()[m[K’:
+[0.494s] [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:48:1:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+[0.494s]    48 | [01;31m[K{[m[K
+[0.494s]       | [01;31m[K^[m[K
+[2.740s] gmake[2]: *** [CMakeFiles/waveDriver.dir/build.make:76: CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o] Error 1
+[2.740s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/waveDriver.dir/all] Error 2
+[2.740s] gmake: *** [Makefile:146: all] Error 2
+[2.742s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16

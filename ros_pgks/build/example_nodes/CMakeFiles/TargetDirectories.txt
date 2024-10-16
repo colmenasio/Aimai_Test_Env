@@ -1,0 +1,10 @@
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/uninstall.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/example_nodes_uninstall.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/waveDriver.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/test.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/edit_cache.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/rebuild_cache.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/list_install_components.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/install.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/install/local.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes/CMakeFiles/install/strip.dir

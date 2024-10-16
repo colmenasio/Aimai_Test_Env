@@ -1,0 +1,25 @@
+[0.007s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[0.058s] [ 50%] [32mBuilding CXX object CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o[0m
+[2.825s] [100%] [32m[1mLinking CXX executable waveDriver[0m
+[2.917s] [100%] Built target waveDriver
+[2.927s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[2.954s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes
+[2.959s] -- Install configuration: ""
+[2.960s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/lib/example_nodes/waveDriver
+[2.960s] -- Set non-toolchain portion of runtime path of "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/lib/example_nodes/waveDriver" to ""
+[2.960s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/package_run_dependencies/example_nodes
+[2.960s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/parent_prefix_path/example_nodes
+[2.960s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/ament_prefix_path.sh
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/ament_prefix_path.dsv
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/path.sh
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/path.dsv
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.bash
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.sh
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.zsh
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.dsv
+[2.961s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/package.dsv
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/packages/example_nodes
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/cmake/example_nodesConfig.cmake
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/cmake/example_nodesConfig-version.cmake
+[2.961s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/package.xml
+[2.962s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes

@@ -1,0 +1,12 @@
+In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:6[m[K:
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp: In instantiation of ‘[01m[Kshmem_channel<T>::[01;32m[Kshmem_channel[m[K() [35m[K[with T = common_structs::RRCAR_COMMAND][m[K[m[K’:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:26:49:[m[K   required from here
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:35:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kshmem_channel<common_structs::RRCAR_COMMAND>::shm_data[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   35 |     data_frame<T> *[01;35m[Kshm_data[m[K;
+      |                    [01;35m[K^~~~~~~~[m[K
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:34:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint shmem_channel<common_structs::RRCAR_COMMAND>::shm_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   34 |     int [01;35m[Kshm_id[m[K;
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:47:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   47 | [01;35m[Kshmem_channel<T>[m[K::shmem_channel() : shm_data(nullptr), shm_id(-1)
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K

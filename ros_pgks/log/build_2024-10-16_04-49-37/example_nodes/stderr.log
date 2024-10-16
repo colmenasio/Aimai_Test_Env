@@ -1,0 +1,18 @@
+In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:5[m[K:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:[m[K In constructor ‘[01m[Kshmem_channel<T>::[01;32m[Kshmem_channel[m[K(int, SHMEM_RIGHTS)[m[K’:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:74:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K*[m[K’ token
+   74 |     if (this->shm_key== (data_frame<T>[01;31m[K*[m[K))
+      |                                       [01;31m[K^[m[K
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:74:40:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   74 |     if (this->shm_key== (data_frame<T>*[01;31m[K)[m[K)
+      |                                        [01;31m[K^[m[K
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:115:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kthis[m[K’
+  115 |     this->shm_data->flags &= 0x0001
+      |                                    [01;31m[K^[m[K
+      |                                    [32m[K;[m[K
+......
+  118 |     [32m[Kthis[m[K->shm_data->ref_count++;
+      |     [32m[K~~~~[m[K                            
+gmake[2]: *** [CMakeFiles/waveDriver.dir/build.make:76: CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/waveDriver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

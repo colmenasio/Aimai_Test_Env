@@ -1,0 +1,22 @@
+[0.009s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[0.062s] [100%] Built target waveDriver
+[0.071s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[0.101s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes
+[0.108s] -- Install configuration: ""
+[0.108s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/lib/example_nodes/waveDriver
+[0.108s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/package_run_dependencies/example_nodes
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/parent_prefix_path/example_nodes
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/ament_prefix_path.sh
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/ament_prefix_path.dsv
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/path.sh
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/environment/path.dsv
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.bash
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.sh
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.zsh
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/local_setup.dsv
+[0.109s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/package.dsv
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/ament_index/resource_index/packages/example_nodes
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/cmake/example_nodesConfig.cmake
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/cmake/example_nodesConfig-version.cmake
+[0.109s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/example_nodes/share/example_nodes/package.xml
+[0.111s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes

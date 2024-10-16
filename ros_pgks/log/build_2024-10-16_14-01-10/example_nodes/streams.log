@@ -1,0 +1,14 @@
+[0.009s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16
+[0.063s] [ 50%] [32mBuilding CXX object CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o[0m
+[0.493s] In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:6[m[K:
+[0.493s] [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:[m[K In member function ‘[01m[Kshmem_channel<T>& shmem_channel<T>::[01;32m[Koperator=[m[K(shmem_channel<T>&&)[m[K’:
+[0.493s] [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:140:28:[m[K [01;31m[Kerror: [m[K‘[01m[KIPC[m[K’ was not declared in this scope
+[0.493s]   140 |             shmctl(shm_id, [01;31m[KIPC[m[K
+[0.493s]       |                            [01;31m[K^~~[m[K
+[0.494s] [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:142:44:[m[K [01;31m[Kerror: [m[K‘[01m[K_RMID[m[K’ was not declared in this scope
+[0.494s]   142 |         std::cout << "SHIT REACHED HERE 2";[01;31m[K_RMID[m[K, nullptr);
+[0.495s]       |                                            [01;31m[K^~~~~[m[K
+[2.771s] gmake[2]: *** [CMakeFiles/waveDriver.dir/build.make:76: CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o] Error 1
+[2.771s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/waveDriver.dir/all] Error 2
+[2.771s] gmake: *** [Makefile:146: all] Error 2
+[2.774s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/example_nodes -- -j16 -l16

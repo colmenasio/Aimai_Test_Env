@@ -1,0 +1,8 @@
+In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:5[m[K:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:[m[K In constructor ‘[01m[Kshmem_channel<T>::[01;32m[Kshmem_channel[m[K(int, SHMEM_RIGHTS)[m[K’:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:56:84:[m[K [01;31m[Kerror: [m[K‘[01m[Ksts[m[K’ has not been declared
+   56 |         std::cout << std::endl << "Created Channel with key: " << this->shm_key << [01;31m[Ksts[m[K::endl;
+      |                                                                                    [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/waveDriver.dir/build.make:76: CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/waveDriver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

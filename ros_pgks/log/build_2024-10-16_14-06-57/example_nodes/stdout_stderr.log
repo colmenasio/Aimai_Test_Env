@@ -1,0 +1,13 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o[0m
+In file included from [01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:6[m[K:
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp: In instantiation of ‘[01m[Kshmem_channel<T>& shmem_channel<T>::[01;32m[Koperator=[m[K(shmem_channel<T>&&) [35m[K[with T = common_structs::RRCAR_COMMAND][m[K[m[K’:
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/example_nodes/src/wave_driver.cpp:29:123:[m[K   required from here
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:136:45:[m[K [01;31m[Kerror: [m[Kcast from ‘[01m[Kshmem_channel<common_structs::RRCAR_COMMAND>*[m[K’ to ‘[01m[Kint[m[K’ loses precision [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  136 |         std::cout << "CURR DATA POINTER" << [01;31m[K(int)this[m[K;
+      |                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/common/shmem_channel/shmem_channel.hpp:137:45:[m[K [01;31m[Kerror: [m[Kcast from ‘[01m[Kdata_frame<common_structs::RRCAR_COMMAND>*[m[K’ to ‘[01m[Kint[m[K’ loses precision [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  137 |         std::cout << "CURR DATA POINTER" << [01;31m[K(int)this->shm_data[m[K;
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/waveDriver.dir/build.make:76: CMakeFiles/waveDriver.dir/src/wave_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/waveDriver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
