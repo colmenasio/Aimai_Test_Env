@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta
 
 # The main recursive "all" target.
 all: CMakeFiles/waveDriver.dir/all
+all: CMakeFiles/positionAnnouncer.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/cpp_example_nodes_uninstall.dir/clean
 clean: CMakeFiles/waveDriver.dir/clean
+clean: CMakeFiles/positionAnnouncer.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -135,7 +137,7 @@ CMakeFiles/cpp_example_nodes_uninstall.dir/clean:
 CMakeFiles/waveDriver.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waveDriver.dir/build.make CMakeFiles/waveDriver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waveDriver.dir/build.make CMakeFiles/waveDriver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles --progress-num=1,2 "Built target waveDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles --progress-num=3,4 "Built target waveDriver"
 .PHONY : CMakeFiles/waveDriver.dir/all
 
 # Build rule for subdir invocation for target.
@@ -153,6 +155,32 @@ waveDriver: CMakeFiles/waveDriver.dir/rule
 CMakeFiles/waveDriver.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waveDriver.dir/build.make CMakeFiles/waveDriver.dir/clean
 .PHONY : CMakeFiles/waveDriver.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/positionAnnouncer.dir
+
+# All Build rule for target.
+CMakeFiles/positionAnnouncer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/positionAnnouncer.dir/build.make CMakeFiles/positionAnnouncer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/positionAnnouncer.dir/build.make CMakeFiles/positionAnnouncer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles --progress-num=1,2 "Built target positionAnnouncer"
+.PHONY : CMakeFiles/positionAnnouncer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/positionAnnouncer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/positionAnnouncer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles 0
+.PHONY : CMakeFiles/positionAnnouncer.dir/rule
+
+# Convenience name for target.
+positionAnnouncer: CMakeFiles/positionAnnouncer.dir/rule
+.PHONY : positionAnnouncer
+
+# clean rule for target.
+CMakeFiles/positionAnnouncer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/positionAnnouncer.dir/build.make CMakeFiles/positionAnnouncer.dir/clean
+.PHONY : CMakeFiles/positionAnnouncer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

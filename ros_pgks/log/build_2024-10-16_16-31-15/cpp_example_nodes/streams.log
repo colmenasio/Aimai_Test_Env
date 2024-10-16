@@ -1,0 +1,27 @@
+[0.018s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes -- -j16 -l16
+[0.136s] [ 50%] Built target waveDriver
+[0.147s] [ 75%] [32mBuilding CXX object CMakeFiles/positionAnnouncer.dir/src/position_announcer.cpp.o[0m
+[5.696s] [100%] [32m[1mLinking CXX executable positionAnnouncer[0m
+[5.887s] [100%] Built target positionAnnouncer
+[5.907s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes -- -j16 -l16
+[5.974s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes
+[5.988s] -- Install configuration: ""
+[5.989s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/lib/cpp_example_nodes/waveDriver
+[5.990s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/lib/cpp_example_nodes/positionAnnouncer
+[5.992s] -- Set non-toolchain portion of runtime path of "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/lib/cpp_example_nodes/positionAnnouncer" to ""
+[5.992s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/ament_index/resource_index/package_run_dependencies/cpp_example_nodes
+[5.992s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/ament_index/resource_index/parent_prefix_path/cpp_example_nodes
+[5.993s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/ament_prefix_path.sh
+[5.993s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/ament_prefix_path.dsv
+[5.993s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/path.sh
+[5.993s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/environment/path.dsv
+[5.993s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.bash
+[5.993s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.sh
+[5.993s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.zsh
+[5.994s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/local_setup.dsv
+[5.994s] -- Installing: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/package.dsv
+[5.994s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/ament_index/resource_index/packages/cpp_example_nodes
+[5.994s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/cmake/cpp_example_nodesConfig.cmake
+[5.994s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/cmake/cpp_example_nodesConfig-version.cmake
+[5.994s] -- Up-to-date: /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/cpp_example_nodes/share/cpp_example_nodes/package.xml
+[5.998s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes

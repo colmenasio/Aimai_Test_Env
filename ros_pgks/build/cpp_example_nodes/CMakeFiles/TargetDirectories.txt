@@ -1,6 +1,7 @@
 /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles/uninstall.dir
 /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles/cpp_example_nodes_uninstall.dir
 /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles/waveDriver.dir
+/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles/positionAnnouncer.dir
 /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles/test.dir
 /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles/edit_cache.dir
 /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/cpp_example_nodes/CMakeFiles/rebuild_cache.dir

@@ -210,6 +210,43 @@ waveDriver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waveDriver.dir/build.make CMakeFiles/waveDriver.dir/build
 .PHONY : waveDriver/fast
 
+#=============================================================================
+# Target rules for targets named positionAnnouncer
+
+# Build rule for target.
+positionAnnouncer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 positionAnnouncer
+.PHONY : positionAnnouncer
+
+# fast build rule for target.
+positionAnnouncer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/positionAnnouncer.dir/build.make CMakeFiles/positionAnnouncer.dir/build
+.PHONY : positionAnnouncer/fast
+
+src/position_announcer.o: src/position_announcer.cpp.o
+.PHONY : src/position_announcer.o
+
+# target to build an object file
+src/position_announcer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/positionAnnouncer.dir/build.make CMakeFiles/positionAnnouncer.dir/src/position_announcer.cpp.o
+.PHONY : src/position_announcer.cpp.o
+
+src/position_announcer.i: src/position_announcer.cpp.i
+.PHONY : src/position_announcer.i
+
+# target to preprocess a source file
+src/position_announcer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/positionAnnouncer.dir/build.make CMakeFiles/positionAnnouncer.dir/src/position_announcer.cpp.i
+.PHONY : src/position_announcer.cpp.i
+
+src/position_announcer.s: src/position_announcer.cpp.s
+.PHONY : src/position_announcer.s
+
+# target to generate assembly for a file
+src/position_announcer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/positionAnnouncer.dir/build.make CMakeFiles/positionAnnouncer.dir/src/position_announcer.cpp.s
+.PHONY : src/position_announcer.cpp.s
+
 src/wave_driver.o: src/wave_driver.cpp.o
 .PHONY : src/wave_driver.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... cpp_example_nodes_uninstall"
 	@echo "... uninstall"
+	@echo "... positionAnnouncer"
 	@echo "... waveDriver"
+	@echo "... src/position_announcer.o"
+	@echo "... src/position_announcer.i"
+	@echo "... src/position_announcer.s"
 	@echo "... src/wave_driver.o"
 	@echo "... src/wave_driver.i"
 	@echo "... src/wave_driver.s"
