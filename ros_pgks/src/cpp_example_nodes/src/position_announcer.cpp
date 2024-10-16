@@ -20,7 +20,7 @@ private:
     rclcpp::TimerBase::SharedPtr timer;
 
 public:
-    PositionAnnouncer() : Node("PositionAnnouncer"), position_channel(RRC_COMMAND_SHMEM_CHANNEL, SHMEM_RIGHTS::READ)
+    PositionAnnouncer() : Node("PositionAnnouncer"), position_channel(RRC_POSITION_SHMEM_CHANNEL, SHMEM_RIGHTS::READ)
     {
         // Initialize the command channel
         //this->command_channel = shmem_channel<common_structs::RRCAR_COMMAND>(RRC_COMMAND_SHMEM_CHANNEL, SHMEM_RIGHTS::WRITE);
