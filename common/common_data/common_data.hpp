@@ -4,5 +4,6 @@
 #define RRC_COMMAND_SHMEM_CHANNEL 65 
 #define RRC_POSITION_SHMEM_CHANNEL 66
 
+#define MAX_STEER 3.14
 
 #endif

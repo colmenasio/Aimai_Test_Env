@@ -5,7 +5,7 @@ namespace common_structs{
     struct RRCAR_COMMAND{
         double gas;
         double brake;
-        double steer; // Counter-clockwise horizontal rotation with origin in the z-axis 
+        double steer; // Counter-clockwise horizontal rotation with origin in the z-axis (max ~= +-3.14) 
     };
     struct RRCAR_POSITION
     {
