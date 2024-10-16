@@ -17,8 +17,10 @@ env = SConscript("godot-cpp/SConstruct")
 # At the moment, this Sconstruct does not automatically scan the "common" directory because im too lazy to implement it.
 
 env.Append(CPPPATH=["src/"])
+env.Append(CPPPATH=["../common/"])
 env.Append(CPPPATH=["../common/shmem_channel"])
-
+env.Append(CPPPATH=["../common/common_structs"])
+env.Append(CPPPATH=["../common/common_structs"])
 
 gdextension_sources= Glob("src/*.cpp")
 common_lib_sources = Glob("../common/shmem_channel/*.cpp")
