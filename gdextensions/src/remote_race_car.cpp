@@ -7,9 +7,8 @@ void RemoteRaceCar::_bind_methods(){
     
 }
 
-RemoteRaceCar::RemoteRaceCar(){
-    this->command_channel = shmem_channel<common_structs::RRCAR_COMMAND>(RRC_COMMAND_SHMEM_CHANNEL, SHMEM_RIGHTS::READ);
-    this->position_channel = shmem_channel<common_structs::RRCAR_POSITION>(RRC_POSITION_SHMEM_CHANNEL, SHMEM_RIGHTS::WRITE);
+RemoteRaceCar::RemoteRaceCar(): command_channel(RRC_COMMAND_SHMEM_CHANNEL, SHMEM_RIGHTS::READ), position_channel(RRC_POSITION_SHMEM_CHANNEL, SHMEM_RIGHTS::WRITE)
+{
 }
 
 RemoteRaceCar::~RemoteRaceCar(){
@@ -30,5 +29,5 @@ void RemoteRaceCar::write_position(){
 }
 
 // Explicitly instantiate the template for RRCAR_POSITION
-template class shmem_channel<common_structs::RRCAR_COMMAND>;
-template class shmem_channel<common_structs::RRCAR_POSITION>;
+template class ShmemChannel<common_structs::RRCAR_COMMAND>;
+template class ShmemChannel<common_structs::RRCAR_POSITION>;

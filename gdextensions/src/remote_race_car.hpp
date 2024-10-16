@@ -15,8 +15,8 @@ class RemoteRaceCar: public VehicleBody3D {
 	GDCLASS(RemoteRaceCar, VehicleBody3D)
 
 private:
-	shmem_channel<common_structs::RRCAR_COMMAND> command_channel;
-	shmem_channel<common_structs::RRCAR_POSITION> position_channel;
+	ShmemChannel<common_structs::RRCAR_COMMAND> command_channel;
+	ShmemChannel<common_structs::RRCAR_POSITION> position_channel;
 
 	void read_commands();
 	void write_position();
