@@ -1,4 +1,26 @@
+[TODO]
+
 Make the read/write permission actually work in 'common/shmem_channel/."
 Add initialization locks in 'common/shmem_channel/."
 
 Automate the adding of source files to the executable in 'gdextension/SConstruct' with a recursive file search
+
+[ISSUES]
+Currently instantiation of 'common/shmem_channel/." as a class attribute only works with implicit instanciation:
+Eg:
+```
+class Something{
+    private:
+    ShmemChannel<some_struct> some_controller
+
+    public:
+    Something(args){
+        this->some_controller = ShmemChannel<some_struct>(args)
+        ...
+    } // THIS WILL RESULT IN SEGMENTATION ERROR. IN THE ShmemChannel MOVE FUNCION, 'this' IS NULL FOR SOME REASION
+
+    Something(args) : some_controller(args) {
+        ...
+    } // EXPLICIT INSTANCIATION LIKE THIS DOES WORK
+}
+```
