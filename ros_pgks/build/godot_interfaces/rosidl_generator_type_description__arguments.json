@@ -1,0 +1,8 @@
+{
+  "package_name": "godot_interfaces",
+  "output_dir": "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces/rosidl_generator_type_description/godot_interfaces",
+  "idl_tuples": [
+    "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces/rosidl_adapter/godot_interfaces:msg/RRCCommand.idl",
+    "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces/rosidl_adapter/godot_interfaces:msg/RRCPosition.idl"
+  ]
+}

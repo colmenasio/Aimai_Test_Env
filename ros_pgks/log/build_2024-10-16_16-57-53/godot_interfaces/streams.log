@@ -1,0 +1,77 @@
+[0.017s] Invoking command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/godot_interfaces -DCMAKE_INSTALL_PREFIX=/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/godot_interfaces
+[0.038s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.382s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.387s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.445s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.493s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.496s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.047s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.048s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.048s]   godot_interfaces --arguments-file
+[1.048s]   /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces/rosidl_adapter__arguments__godot_interfaces.json
+[1.048s]   --output-dir
+[1.048s]   /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces/rosidl_adapter/godot_interfaces
+[1.048s]   --output-file
+[1.048s]   /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces/rosidl_adapter/godot_interfaces.idls)
+[1.049s]   returned error code 1:
+[1.049s] 
+[1.049s]   Error processing 'float64 steer // Counter-clockwise horizontal rotation
+[1.049s]   with origin in the z-axis in radians' of 'godot_interfaces/RRCCommand':
+[1.049s]   'value '// Counter-clockwise horizontal rotation with origin in the z-axis
+[1.049s]   in radians' can not be converted to type 'float64': must be a floating
+[1.049s]   point number using '.' as the separator'
+[1.049s] 
+[1.049s]   Traceback (most recent call last):
+[1.049s] 
+[1.050s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 730, in parse_primitive_value_string
+[1.050s]       return float(value_string)
+[1.050s]              ^^^^^^^^^^^^^^^^^^^
+[1.050s] 
+[1.050s]   ValueError: could not convert string to float: '// Counter-clockwise
+[1.050s]   horizontal rotation with origin in the z-axis in radians'
+[1.050s] 
+[1.050s] 
+[1.050s] 
+[1.050s]   During handling of the above exception, another exception occurred:
+[1.050s] 
+[1.051s] 
+[1.051s] 
+[1.051s]   Traceback (most recent call last):
+[1.051s] 
+[1.051s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.051s]     File "<frozen runpy>", line 88, in _run_code
+[1.051s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.051s]       sys.exit(main())
+[1.051s]                ^^^^^^
+[1.051s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.052s]       abs_idl_file = convert_to_idl(
+[1.052s]                      ^^^^^^^^^^^^^^^
+[1.052s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.052s]       return convert_msg_to_idl(
+[1.052s]              ^^^^^^^^^^^^^^^^^^^
+[1.052s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.052s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.052s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.052s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[1.052s]       fields.append(Field(
+[1.053s]                     ^^^^^^
+[1.053s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 362, in __init__
+[1.053s]       self.default_value = parse_value_string(
+[1.053s]                            ^^^^^^^^^^^^^^^^^^^
+[1.053s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 595, in parse_value_string
+[1.053s]       return parse_primitive_value_string(type_, value_string)
+[1.053s]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.053s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 732, in parse_primitive_value_string
+[1.053s]       raise InvalidValue(
+[1.054s] 
+[1.054s]   rosidl_adapter.parser.InvalidValue: value '// Counter-clockwise horizontal
+[1.054s]   rotation with origin in the z-axis in radians' can not be converted to type
+[1.054s]   'float64': must be a floating point number using '.' as the separator
+[1.054s] 
+[1.054s] Call Stack (most recent call first):
+[1.054s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.054s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[1.054s] 
+[1.054s] [0m
+[1.055s] -- Configuring incomplete, errors occurred!
+[1.057s] Invoked command in '/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/build/godot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/godot_interfaces -DCMAKE_INSTALL_PREFIX=/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/install/godot_interfaces

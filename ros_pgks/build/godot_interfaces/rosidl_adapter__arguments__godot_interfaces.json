@@ -1,0 +1,7 @@
+{
+  "package_name": "godot_interfaces",
+  "non_idl_tuples": [
+    "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/godot_interfaces:msg/RRCCommand.msg",
+    "/home/colmenasio/Personal/Proyects/Racing/aimai_test_env_beta/ros_pgks/src/godot_interfaces:msg/RRCPosition.msg"
+  ]
+}
