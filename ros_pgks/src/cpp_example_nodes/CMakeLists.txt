@@ -30,9 +30,13 @@ add_executable(waveDriver src/wave_driver.cpp ${CURR_WD}common/common_structs/co
 ament_target_dependencies(waveDriver rclcpp)
 target_include_directories(waveDriver PRIVATE ${CURR_WD}common/)
 
+add_executable(positionAnnouncer src/position_announcer.cpp ${CURR_WD}common/common_structs/common_structs.hpp ${CURR_WD}common/common_data/common_data.hpp ${CURR_WD}common/shmem_channel/shmem_channel.hpp)
+ament_target_dependencies(positionAnnouncer rclcpp)
+target_include_directories(positionAnnouncer PRIVATE ${CURR_WD}common/)
 
 install(TARGETS
   waveDriver 
+  positionAnnouncer
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
